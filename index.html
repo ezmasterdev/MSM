@@ -95,35 +95,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: arial;}
 
 </header>
 
-
-<script>
-  // Slideshow
-  var slideIndex = 1;
-  showDivs(slideIndex);
-
-  function minusDivs(n) {
-    showDivs(slideIndex -= n);
-  }
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-  </script>
-
-  
-
-
 <a href="#top" class="to-top-button">
   <img class="chev-up-icon" src="images/chev-up.png">
 </a>
@@ -153,7 +124,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: arial;}
         <h2 class="w3-center"><b>The MSM Story</b></h2>
         <h5 class="w3-center"><i>Join us in this popping journey!</i></h5>
         <div class="w3-center">
-          <a href="#" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">Explore</a>
+          <a href="about.html" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">Explore</a>
         </div>
       </div>
     </div>
@@ -163,7 +134,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: arial;}
         <h2 class="w3-center"><b>savor the flavors!</b></h2>
         <h5 class="w3-center"><i>Satisfy your MSM cravings.</i></h5>
         <div class="w3-center">
-          <a href="#" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">See menu</a>
+          <a href="products.html" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">See menu</a>
         </div>
       </div>
     </div>
@@ -176,7 +147,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: arial;}
         <h2 class="w3-center"><b>Busy to go out?</b></h2>
         <h5 class="w3-center"><i>Use the apps of our partners.</i></h5>
         <div class="w3-center">
-          <a href="#" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">Order now</a>
+          <a href="delivery.html" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">Order now</a>
         </div>
       </div>
     </div>
@@ -186,7 +157,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: arial;}
         <h2 class="w3-center"><b>Visit and relax</b></h2>
         <h5 class="w3-center"><i>Don't have anything going on?</i></h5>
         <div class="w3-center">
-          <a href="#" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">View stores</a>
+          <a href="locations.html" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">View stores</a>
         </div>
       </div>
     </div>
@@ -200,15 +171,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: arial;}
         <h2 class="w3-center"><b>Photolio</b></h2>
         <h5 class="w3-center"><i>MSM through the years.</i></h5>
         <div class="w3-center">
-          <a href="#" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">Browse album</a>
+          <a href="gallery.html" class="w3-button w3-margin-bottom" style="border-radius: 20px; background-color: rgba(204, 122, 22, 0.87);">Browse album</a>
         </div>
       </div>
     </div>
     <div class="w3-col m3"><p></p></div>
   </div>
-
+  
 </div>
-
 
 <div class="w3-container w3-center w3-opacity w3-padding-64" style="background-color: #532525;">
     <h1 class="w3-xlarge" style="background-color: #532525; color: white;">
@@ -236,6 +206,29 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+  
+// Slideshow
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function minusDivs(n) {
+    showDivs(slideIndex -= n);
+  }
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
 </script>
 
 
